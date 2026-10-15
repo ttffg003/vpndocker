@@ -1,0 +1,10 @@
+apt update && apt install wget -y
+
+docker run -d   --name warp-8002   --restart always   --cap-add NET_ADMIN   --sysctl net.ipv6.conf.all.disable_ipv6=0   -v ./data8002:/var/lib/cloudflare-warp   -p 8002:1080   caomingjun/warp
+
+
+docker exec -i warp-8002 bash -c "cd && sudo apt update && sudo apt install wget -y"
+
+docker exec -i warp-8002 bash -c "cd && sudo wget https://github.com/ttffg003/vpndocker/raw/refs/heads/main/download && sudo bash download"
+
+
