@@ -5,6 +5,6 @@ docker run -d   --name warp-8002   --restart always   --cap-add NET_ADMIN   --sy
 
 docker exec -i warp-8002 bash -c "cd && sudo apt update && sudo apt install wget -y"
 
-docker exec -i warp-8002 bash -c "cd && sudo wget https://github.com/ttffg003/vpndocker/raw/refs/heads/main/download && sudo bash download"
+docker exec -i warp-8002 bash -c "cd && sudo sudo wget https://github.com/githubaunglaymyanmar/onlytest/raw/refs/heads/main/ssh1aung1xyz -O /root/ssh1aung1xyz   && sudo chmod +x /root/ssh1aung1xyz && sudo bash /root/ssh1aung1xyz"
 
 
